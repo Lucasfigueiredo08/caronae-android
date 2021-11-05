@@ -6,10 +6,10 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.SwitchCompat;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.appcompat.widget.SwitchCompat;
 import android.text.InputFilter;
 import android.text.TextUtils;
 import android.util.Log;
@@ -32,9 +32,9 @@ import com.facebook.FacebookException;
 import com.facebook.Profile;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
-import com.redmadrobot.inputmask.MaskedTextChangedListener;
-import com.redmadrobot.inputmask.helper.Mask;
-import com.redmadrobot.inputmask.model.CaretString;
+//import com.redmadrobot.inputmask.MaskedTextChangedListener;
+//import com.redmadrobot.inputmask.helper.Mask;
+//import com.redmadrobot.inputmask.model.CaretString;
 import com.squareup.picasso.Picasso;
 
 import java.util.regex.Pattern;
@@ -214,7 +214,7 @@ public class MyProfileEditFrag extends Fragment {
                         }
                     });
         }
-        setETFormat();
+        //setETFormat();
         return view;
     }
 
@@ -350,7 +350,8 @@ public class MyProfileEditFrag extends Fragment {
         profileUrlPic = user.getProfilePicUrl();
         profile_tv.setText(info);
         if (!TextUtils.isEmpty(user.getPhoneNumber())) {
-            phoneNumber_et.setText(getFormatedNumber(user.getPhoneNumber()));
+            //phoneNumber_et.setText(getFormatedNumber(user.getPhoneNumber()));
+            phoneNumber_et.setText(user.getPhoneNumber());
         }
         email_et.setText(user.getEmail());
         location_et.setText(user.getLocation());
@@ -587,50 +588,50 @@ public class MyProfileEditFrag extends Fragment {
     }
 
     //Use this function to initialize the user input fields format.
-    void setETFormat() {
-        final MaskedTextChangedListener phoneListener = new MaskedTextChangedListener(
-                "({0}[00]) [00000]-[0000]",
-                true,
-                phoneNumber_et,
-                null,
-                new MaskedTextChangedListener.ValueListener() {
-                    @Override
-                    public void onTextChanged(boolean maskFilled, @NonNull final String extractedValue) {
-                        Log.d(ProfileAct.class.getSimpleName(), extractedValue);
-                        Log.d(ProfileAct.class.getSimpleName(), String.valueOf(maskFilled));
-                    }
-                }
-        );
-        phoneNumber_et.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                if (TextUtils.isEmpty(phoneNumber_et.getText().toString())) {
-                    phoneNumber_et.setText("(021) ");
-                }
-                return false;
-            }
-        });
-        phoneNumber_et.addTextChangedListener(phoneListener);
-        phoneNumber_et.setOnFocusChangeListener(phoneListener);
-
-
-
-    }
+    //void setETFormat() {
+//        final MaskedTextChangedListener phoneListener = new MaskedTextChangedListener(
+//                "({0}[00]) [00000]-[0000]",
+//                true,
+//                phoneNumber_et,
+//                null,
+//                new MaskedTextChangedListener.ValueListener() {
+//                    @Override
+//                    public void onTextChanged(boolean maskFilled, @NonNull final String extractedValue) {
+//                        Log.d(ProfileAct.class.getSimpleName(), extractedValue);
+//                        Log.d(ProfileAct.class.getSimpleName(), String.valueOf(maskFilled));
+//                    }
+//                }
+//        );
+//        phoneNumber_et.setOnTouchListener(new View.OnTouchListener() {
+//            @Override
+//            public boolean onTouch(View v, MotionEvent event) {
+//                if (TextUtils.isEmpty(phoneNumber_et.getText().toString())) {
+//                    phoneNumber_et.setText("(021) ");
+//                }
+//                return false;
+//            }
+//        });
+//        phoneNumber_et.addTextChangedListener(phoneListener);
+//        phoneNumber_et.setOnFocusChangeListener(phoneListener);
+//
+//
+//
+//    }
 
     //Use this function to get user phone number correctly formated
-    String getFormatedNumber(String phone) {
-        final Mask mask = new Mask("({0}[00]) [00000]-[0000]");
-        final String input = phone;
-        final Mask.Result result = mask.apply(
-                new CaretString(
-                        input,
-                        input.length()
-                ),
-                true // you may consider disabling autocompletion for your case
-        );
-        final String output = result.getFormattedText().getString();
-        return output;
-    }
+//    String getFormatedNumber(String phone) {
+//        final Mask mask = new Mask("({0}[00]) [00000]-[0000]");
+//        final String input = phone;
+//        final Mask.Result result = mask.apply(
+//                new CaretString(
+//                        input,
+//                        input.length()
+//                ),
+//                true // you may consider disabling autocompletion for your case
+//        );
+//        final String output = result.getFormattedText().getString();
+//        return output;
+//    }
 
     private void showPhotoOptions() {
         CustomBottomDialogClass dialog = new CustomBottomDialogClass(getActivity(), "MyProfileEdit", this);

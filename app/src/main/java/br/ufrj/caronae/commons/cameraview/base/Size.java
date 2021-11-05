@@ -16,7 +16,7 @@
 
 package br.ufrj.caronae.commons.cameraview.base;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 /**
  * Immutable class for describing width and height dimensions in pixels.

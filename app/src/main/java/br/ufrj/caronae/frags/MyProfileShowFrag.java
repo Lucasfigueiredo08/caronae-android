@@ -7,8 +7,8 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
@@ -19,8 +19,8 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.redmadrobot.inputmask.helper.Mask;
-import com.redmadrobot.inputmask.model.CaretString;
+//import com.redmadrobot.inputmask.helper.Mask;
+//import com.redmadrobot.inputmask.model.CaretString;
 import com.squareup.picasso.Picasso;
 
 import java.util.regex.Pattern;
@@ -158,7 +158,8 @@ public class MyProfileShowFrag extends Fragment {
         if(!TextUtils.isEmpty(user.getPhoneNumber()))
         {
             String phone;
-            phone = getFormatedNumber(user.getPhoneNumber());
+            //phone = getFormatedNumber(user.getPhoneNumber());
+            phone = user.getPhoneNumber();
             phone_tv.setText(phone);
         }
         if(!TextUtils.isEmpty(user.getCreatedAt()))
@@ -207,20 +208,20 @@ public class MyProfileShowFrag extends Fragment {
     }
 
     //Use this function to get user phone number correctly formated
-    String getFormatedNumber(String phone)
-    {
-        final Mask mask = new Mask("({0}[00]) [00000]-[0000]");
-        final String input = phone;
-        final Mask.Result result = mask.apply(
-                new CaretString(
-                        input,
-                        input.length()
-                ),
-                true // you may consider disabling autocompletion for your case
-        );
-        final String output = result.getFormattedText().getString();
-        return output;
-    }
+//    String getFormatedNumber(String phone)
+//    {
+//        final Mask mask = new Mask("({0}[00]) [00000]-[0000]");
+//        final String input = phone;
+//        final Mask.Result result = mask.apply(
+//                new CaretString(
+//                        input,
+//                        input.length()
+//                ),
+//                true // you may consider disabling autocompletion for your case
+//        );
+//        final String output = result.getFormattedText().getString();
+//        return output;
+//    }
     //Use this function to get user car plate correctly formated
 
     //Define actions when the user holds or touch the number on Profile Activity

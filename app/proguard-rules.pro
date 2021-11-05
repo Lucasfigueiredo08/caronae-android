@@ -16,4 +16,4 @@
 #   public *;
 #}
 
--keep class br.ufrj.caronae.** { *; }
+-keep class com.unifap.caronaeunifap.** { *; }

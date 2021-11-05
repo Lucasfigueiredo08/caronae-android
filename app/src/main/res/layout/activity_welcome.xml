@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_gray"
-    tools:context="br.ufrj.caronae.acts.WelcomeAct">
+    tools:context="com.unifap.caronaeunifap.acts.WelcomeAct">
 
     <TextView
         android:id="@+id/welcome_title"

@@ -185,7 +185,7 @@
             android:text=" - "
             android:drawableStart="@drawable/ic_color_24dp" />
     </RelativeLayout>
-    <android.support.v7.widget.ButtonBarLayout
+    <androidx.appcompat.widget.ButtonBarLayout
         android:id="@+id/logout_bt"
         android:layout_width="75dp"
         android:layout_height="30dp"

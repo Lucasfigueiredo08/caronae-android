@@ -166,7 +166,7 @@
             android:text="@string/fragment_myprofile_contacts_text"
             android:textSize="12sp" />
 
-        <android.support.v7.widget.AppCompatEditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/email_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -181,7 +181,7 @@
             android:inputType="textEmailAddress"
             app:backgroundTint="@color/black_overlay_background" />
 
-        <android.support.v7.widget.AppCompatEditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/phoneNumber_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -213,7 +213,7 @@
             android:text="@string/fragment_myprofile_location_text"
             android:textSize="12sp" />
 
-        <android.support.v7.widget.AppCompatEditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/location_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -236,7 +236,7 @@
             android:text="@string/fragment_myprofile_car_owner"
             android:textStyle="bold" />
 
-        <android.support.v7.widget.SwitchCompat
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/carOwner_sw"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -268,7 +268,7 @@
                 android:text="@string/fragment_myprofile_car_text"
                 android:textSize="12sp" />
 
-            <android.support.v7.widget.AppCompatEditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/carPlate_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -281,7 +281,7 @@
                 android:inputType="textNoSuggestions|textVisiblePassword"
                 app:backgroundTint="@color/black_overlay_background" />
 
-            <android.support.v7.widget.AppCompatEditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/carModel_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -293,7 +293,7 @@
                 android:singleLine="true"
                 app:backgroundTint="@color/black_overlay_background"/>
 
-            <android.support.v7.widget.AppCompatEditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/carColor_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

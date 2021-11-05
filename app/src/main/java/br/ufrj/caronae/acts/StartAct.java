@@ -3,7 +3,7 @@ package br.ufrj.caronae.acts;
 import android.content.Intent;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 
 import br.ufrj.caronae.App;

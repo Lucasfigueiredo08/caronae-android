@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
@@ -18,8 +18,8 @@ import android.widget.TextView;
 
 import com.facebook.AccessToken;
 import com.google.gson.Gson;
-import com.redmadrobot.inputmask.helper.Mask;
-import com.redmadrobot.inputmask.model.CaretString;
+//import com.redmadrobot.inputmask.helper.Mask;
+//import com.redmadrobot.inputmask.model.CaretString;
 import com.squareup.picasso.Picasso;
 
 import br.ufrj.caronae.R;
@@ -191,7 +191,8 @@ public class ProfileAct extends AppCompatActivity {
         from = getIntent().getExtras().getString("from");
         if (showPhone) {
             phone_icon.setVisibility(View.VISIBLE);
-            String phone = getFormatedNumber(user.getPhoneNumber());
+         //   String phone = getFormatedNumber(user.getPhoneNumber());
+            String phone = user.getPhoneNumber();
             phone_tv.setText(phone);
             phone_tv.setVisibility(View.VISIBLE);
             //Controls the options that appears on app when user touch (short or long) on phone number
@@ -317,18 +318,18 @@ public class ProfileAct extends AppCompatActivity {
     }
 
     //Use this function to get user phone number correctly formated
-    String getFormatedNumber(String phone)
-    {
-        final Mask mask = new Mask("({0}[00]) [00000]-[0000]");
-        final String input = phone;
-        final Mask.Result result = mask.apply(
-                new CaretString(
-                        input,
-                        input.length()
-                ),
-                true // you may consider disabling autocompletion for your case
-        );
-        final String output = result.getFormattedText().getString();
-        return output;
-    }
+//    String getFormatedNumber(String phone)
+//    {
+//        final Mask mask = new Mask("({0}[00]) [00000]-[0000]");
+//        final String input = phone;
+//        final Mask.Result result = mask.apply(
+//                new CaretString(
+//                        input,
+//                        input.length()
+//                ),
+//                true // you may consider disabling autocompletion for your case
+//        );
+//        final String output = result.getFormattedText().getString();
+//        return output;
+//    }
 }

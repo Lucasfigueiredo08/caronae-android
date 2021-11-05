@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/caronae-android.iml" filepath="$PROJECT_DIR$/caronae-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TCC_Lucas_Figueiredo-Caronae-Android-principal.iml" filepath="$PROJECT_DIR$/.idea/modules/TCC_Lucas_Figueiredo-Caronae-Android-principal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TCC_Lucas_Figueiredo-Caronae-Android-principal.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TCC_Lucas_Figueiredo-Caronae-Android-principal.app.iml" />
     </modules>
   </component>
 </project>

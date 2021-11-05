@@ -4,7 +4,8 @@
     <string name="app_name">Caronaê</string>
 
     <!-- Facebook -->
-    <string name="facebook_app_id">933455893356973</string>
+    <string name="facebook_app_id">284084340252143</string>
+    <string name="fb_login_protocol_scheme">fb284084340252143</string>
     <string name="facebook_mutual_friends">Amigos em comum: - </string>
     <string name="facebook_login_error">Erro ao logar no Facebook</string>
     <string name="facebook_saveid_error">Erro ao enviar Facebook ID</string>
@@ -84,12 +85,12 @@
     <string name="edit_profile">Editar Perfil</string>
     <string name="refuse_rider">Remover pedido</string>
     <string name="finish_ride">Concluir carona</string>
-    <string name="leaving_ufrj">Saindo da UFRJ</string>
+    <string name="leaving_ufrj">Saindo da Unifap</string>
     <string name="leaving_at">"Saindo às %1$s"</string>
     <string name="generate_routine">Gerar Rotina</string>
     <string name="arriving_at">"Chegando às %1$s"</string>
     <string name="ride_share">Compartilhar carona</string>
-    <string name="arriving_ufrj">Chegando na UFRJ</string>
+    <string name="arriving_ufrj">Chegando na Unifap</string>
     <string name="accept_rider">Aceitar caronista</string>
     <string name="days_of_the_week">Dias da semana</string>
     <string name="remove_choose">Remover minha foto</string>
@@ -175,7 +176,6 @@
     <string name="fragment_ridesearch_campi_hint">Centro Universitário</string>
     <string name="fragment_rideoffer_hub_hint">Escolha o hub de encontro</string>
     <string name="fragment_otherzone_edittext_hint">Digite o nome do bairro</string>
-    <string name="fragment_rideoffer_place_hint">Referência Ex: Shopping Tijuca</string>
-    <string name="fragment_rideoffer_way_hint">Rota Ex: Maracanã, Leopoldina, Linha Vermelha</string>
-
+    <string name="fragment_rideoffer_place_hint">Referência Ex: Macapá Shopping</string>
+    <string name="fragment_rideoffer_way_hint">Rota Ex: SESI, Leopoldo, JK, Unimed</string>
 </resources>

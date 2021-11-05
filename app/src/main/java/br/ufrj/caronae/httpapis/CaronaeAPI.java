@@ -57,9 +57,9 @@ public class CaronaeAPI {
     }
 
     private static OkHttpClient.Builder enableTls12OnPreLollipop(OkHttpClient.Builder client) {
-        if (Build.VERSION.SDK_INT >= 15 && Build.VERSION.SDK_INT <= 21) {
+        if (Build.VERSION.SDK_INT >= 15 && Build.VERSION.SDK_INT <= 21) { //29
             try {
-                SSLContext tlsContext = SSLContext.getInstance("TLSv1.2");
+                SSLContext tlsContext = SSLContext.getInstance("TLSv1.2"); //TLSv1.2
                 tlsContext.init(null, null, null);
                 client.sslSocketFactory(new Tls12SocketFactory(tlsContext.getSocketFactory()));
 

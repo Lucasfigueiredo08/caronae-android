@@ -15,7 +15,6 @@ import android.graphics.drawable.ShapeDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
-import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -30,10 +29,12 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
+
 import com.facebook.AccessToken;
 import com.google.gson.Gson;
-import com.redmadrobot.inputmask.helper.Mask;
-import com.redmadrobot.inputmask.model.CaretString;
+//import com.redmadrobot.inputmask.helper.Mask;
+//import com.redmadrobot.inputmask.model.CaretStrimng;
 import com.squareup.picasso.Picasso;
 
 import java.text.SimpleDateFormat;
@@ -45,13 +46,13 @@ import java.util.Locale;
 import java.util.regex.Pattern;
 
 import br.ufrj.caronae.App;
-import br.ufrj.caronae.customizedviews.CustomDialogClass;
 import br.ufrj.caronae.R;
+import br.ufrj.caronae.Util;
+import br.ufrj.caronae.customizedviews.CustomDialogClass;
 import br.ufrj.caronae.customizedviews.CustomPhoneDialogClass;
 import br.ufrj.caronae.customizedviews.RoundedTransformation;
-import br.ufrj.caronae.data.SharedPref;
 import br.ufrj.caronae.customizedviews.SwipeDismissBaseActivity;
-import br.ufrj.caronae.Util;
+import br.ufrj.caronae.data.SharedPref;
 import br.ufrj.caronae.httpapis.CaronaeAPI;
 import br.ufrj.caronae.models.ChatAssets;
 import br.ufrj.caronae.models.Ride;
@@ -526,7 +527,8 @@ public class RideDetailAct extends SwipeDismissBaseActivity {
                 join_bt.setVisibility(View.GONE);
                 requested_dt.setVisibility(View.GONE);
                 inviteLay.setVisibility(View.GONE);
-                String phone = getFormatedNumber(rideWithUsers.getDriver().getPhoneNumber());
+                //String phone = getFormatedNumber(rideWithUsers.getDriver().getPhoneNumber());
+                String phone = rideWithUsers.getDriver().getPhoneNumber();
                 phone_tv.setText(phone);
                 phone_ic.setVisibility(View.VISIBLE);
                 phone_tv.setVisibility(View.VISIBLE);
@@ -755,7 +757,8 @@ public class RideDetailAct extends SwipeDismissBaseActivity {
         String brazilianPlateRegex = "^[A-Z]{3}[0-9]{4}$";
         String plate = Pattern.compile(brazilianPlateRegex).matcher(rideWithUsers.getDriver().getCarPlate()).matches() ? rideWithUsers.getDriver().getCarPlate().substring(0,3)+"-"+rideWithUsers.getDriver().getCarPlate().substring(3):rideWithUsers.getDriver().getCarPlate();
         plate_tv.setText(plate);
-        String phone = getFormatedNumber(rideWithUsers.getDriver().getPhoneNumber());
+        //String phone = getFormatedNumber(rideWithUsers.getDriver().getPhoneNumber());
+        String phone = rideWithUsers.getDriver().getPhoneNumber();
         phone_tv.setText(phone);
         phone_ic.setVisibility(View.VISIBLE);
         phone_tv.setVisibility(View.VISIBLE);
@@ -1287,18 +1290,18 @@ public class RideDetailAct extends SwipeDismissBaseActivity {
     }
 
     //Use this function to get user phone number correctly formated
-    String getFormatedNumber(String phone)
-    {
-        final Mask mask = new Mask("({0}[00]) [00000]-[0000]");
-        final String input = phone;
-        final Mask.Result result = mask.apply(
-                new CaretString(
-                        input,
-                        input.length()
-                ),
-                true // you may consider disabling autocompletion for your case
-        );
-        final String output = result.getFormattedText().getString();
-        return output;
-    }
+//    String getFormatedNumber(String phone)
+//    {
+//        final Mask mask = new Mask("({0}[00]) [00000]-[0000]");
+//        final String input = phone;
+//        final Mask.Result result = mask.apply(
+//                new CaretString(
+//                        input,
+//                        input.length()
+//                ),
+//                true // you may consider disabling autocompletion for your case
+//        );
+//        final String output = result.getFormattedText().getString();
+//        return output;
+//    }
 }
