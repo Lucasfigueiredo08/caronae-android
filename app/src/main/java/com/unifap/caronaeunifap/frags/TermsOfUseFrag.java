@@ -43,8 +43,8 @@ public class TermsOfUseFrag extends Fragment {
                 progressBar.setVisibility(View.GONE);
             }
         });
-        webView.loadUrl(Constants.CARONAE_URL_BASE + "termos_mobile.html");
-        //webView.loadUrl(Constants.CARONAE_URL_BASE + "https://caronae.org/termos_mobile.html");
+        //webView.loadUrl(Constants.CARONAE_URL_BASE + "termos_mobile.html");
+        webView.loadUrl("https://caronae.org/termos_mobile.html");
 
         return view;
     }

@@ -25,8 +25,8 @@ android {
         applicationId "com.unifap.caronaeunifap"
         minSdkVersion 16
         targetSdkVersion 30 //28
-        versionCode buildVersionCode() ?: 40//1
-        versionName "40"                     //"2"
+        versionCode buildVersionCode() ?: 44//1
+        versionName "44"                     //"2"
         renderscriptTargetApi 15
         renderscriptSupportModeEnabled true
         multiDexEnabled true
@@ -54,10 +54,7 @@ android {
             }
         }
     }
-//    dexOptions {
-//        javaMaxHeapSize "4g"
-//        jumboMode true
-//    }
+
     compileOptions {
         targetCompatibility 1.8
         sourceCompatibility 1.8
@@ -68,7 +65,6 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.jakewharton:butterknife:10.0.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
-    //implementation 'com.google.android.gms:play-services-gcm:17.0.0'
 
 
     //firebase
@@ -88,11 +84,6 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
     implementation 'com.jakewharton:butterknife:10.0.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
-
-    // define any required OkHttp artifacts without version
-    //implementation("com.squareup.okhttp3:okhttp:4.9.0")
-    //implementation("com.squareup.okhttp3:okhttp")
-    //implementation("com.squareup.okhttp3:logging-interceptor")
 
     implementation 'androidx.vectordrawable:vectordrawable:1.0.0'
     implementation 'com.squareup.picasso:picasso:2.5.2'
@@ -116,11 +107,10 @@ dependencies {
     implementation 'io.reactivex:rxandroid:1.0.1'
     implementation 'de.hdodenhof:circleimageview:2.1.0'
     implementation 'ch.acra:acra:4.11.1'
-    //implementation 'com.github.RedMadRobot:input-mask-android:6.1.0'
     implementation 'io.github.vicmikhailau:MaskedEditText:4.0.5'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1+"
     implementation 'com.github.rtoshiro.mflibrary:mflibrary:1.0.0'
-    //implementation 'com.redmadrobot:inputmask:2.3.0'
+
 
 
 

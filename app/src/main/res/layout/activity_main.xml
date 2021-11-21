@@ -141,6 +141,7 @@
             android:background="@color/white"
             app:menu="@menu/navigation"
             app:itemIconTint="@drawable/navigationtextselector"
-            app:itemTextColor="@drawable/navigationtextselector"/>
+            app:itemTextColor="@drawable/navigationtextselector"
+            />
     </RelativeLayout>
 </androidx.drawerlayout.widget.DrawerLayout>

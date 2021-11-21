@@ -41,7 +41,8 @@ public class AboutFrag extends Fragment {
                 progressBar.setVisibility(View.GONE);
             }
         });
-        webView.loadUrl(Constants.CARONAE_URL_BASE + "sobre_mobile.html");
+        //webView.loadUrl(Constants.CARONAE_URL_BASE + "sobre_mobile.html");
+        webView.loadUrl("https://caronae.org/sobre_mobile.html");
         return view;
     }
 }

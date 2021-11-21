@@ -11,7 +11,8 @@
         android:id="@+id/toolbar_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardElevation="4dp">
+        app:cardElevation="4dp"
+        >
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="45dp"
@@ -28,38 +29,41 @@
                     android:layout_centerVertical="true"
                     android:clickable="true"
                     android:focusable="true">
+
                     <ImageView
                         android:id="@+id/arrow"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:tint="@color/dark_gray"
-                        android:src="@drawable/ic_keyboard_arrow_left_24dp"/>
+                        android:src="@drawable/ic_keyboard_arrow_left_24dp"
+                        android:tint="@color/dark_gray" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/ride"
                         android:layout_centerVertical="true"
-                        android:layout_toRightOf="@id/arrow"
-                        android:layout_toEndOf="@id/arrow"
-                        android:textColor="@color/dark_gray"
-                        android:layout_marginLeft="-10dp"
                         android:layout_marginStart="-10dp"
-                        android:textSize="18sp"/>
+                        android:layout_marginLeft="-10dp"
+                        android:layout_toEndOf="@id/arrow"
+                        android:layout_toRightOf="@id/arrow"
+                        android:text="@string/ride"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="18sp" />
                 </RelativeLayout>
+
                 <TextView
                     android:id="@+id/chat_header_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/back_bt"
-                    android:layout_toEndOf="@id/back_bt"
+                    android:layout_centerVertical="true"
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginEnd="20dp"
                     android:layout_marginRight="20dp"
-                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/back_bt"
+                    android:layout_toRightOf="@id/back_bt"
                     android:text="BARRA DA TIJUCA ➜ CSS - 25/12 - 12:00"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp" />
             </RelativeLayout>
         </FrameLayout>
     </androidx.cardview.widget.CardView>
@@ -96,14 +100,14 @@
                 android:id="@+id/chatMsgs_rv"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="12dp"
+                android:layout_above="@id/writeLayout"
                 android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginEnd="12dp"
                 android:layout_marginRight="12dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginBottom="20dp"
-                android:clipToPadding="false"
-                android:layout_above="@id/writeLayout"/>
+                android:clipToPadding="false" />
 
             <LinearLayout
                 android:id="@+id/writeLayout"

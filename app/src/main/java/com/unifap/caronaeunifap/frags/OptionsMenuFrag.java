@@ -43,8 +43,8 @@ public class OptionsMenuFrag extends Fragment {
     TextView history_btn;
     @BindView(R.id.faq_btn)
     TextView faq_btn;
-    @BindView(R.id.falae_btn)
-    TextView falae_btn;
+//    @BindView(R.id.falae_btn)
+//    TextView falae_btn;
     @BindView(R.id.termsofuse_btn)
     TextView termsOfUse_btn;
     @BindView(R.id.about_btn)
@@ -132,12 +132,12 @@ public class OptionsMenuFrag extends Fragment {
         getActivity().overridePendingTransition(R.anim.anim_right_slide_in, R.anim.anim_left_slide_out);
     }
 
-    @OnClick(R.id.falae_btn)
-    public void openFalae() {
-        Intent falaeAct = new Intent(getActivity(), FalaeAct.class);
-        startActivity(falaeAct);
-        getActivity().overridePendingTransition(R.anim.anim_right_slide_in, R.anim.anim_left_slide_out);
-    }
+//    @OnClick(R.id.falae_btn)
+//    public void openFalae() {
+//        Intent falaeAct = new Intent(getActivity(), FalaeAct.class);
+//        startActivity(falaeAct);
+//        getActivity().overridePendingTransition(R.anim.anim_right_slide_in, R.anim.anim_left_slide_out);
+//    }
 
     @OnClick(R.id.termsofuse_btn)
     public void openTermsOfUse() {

@@ -33,6 +33,7 @@ import com.facebook.FacebookException;
 import com.facebook.Profile;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
+import com.facebook.login.widget.LoginButton;
 //import com.redmadrobot.inputmask.MaskedTextChangedListener;
 //import com.redmadrobot.inputmask.helper.Mask;
 //import com.redmadrobot.inputmask.model.CaretString;
@@ -40,6 +41,7 @@ import com.github.rtoshiro.util.format.SimpleMaskFormatter;
 import com.github.rtoshiro.util.format.text.MaskTextWatcher;
 import com.squareup.picasso.Picasso;
 
+import java.util.Arrays;
 import java.util.regex.Pattern;
 
 import com.unifap.caronaeunifap.App;
@@ -133,6 +135,7 @@ public class MyProfileEditFrag extends Fragment {
         newFilters[editFilters.length] = new InputFilter.AllCaps();
         carPlate_et.setFilters(newFilters);
         loginButton.setReadPermissions("user_friends");
+        //loginButton.setPermissions(Arrays.asList("user_friends"));
         loginButton.setFragment(this);
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override

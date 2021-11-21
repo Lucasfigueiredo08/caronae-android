@@ -15,6 +15,30 @@
         <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android - principal/app/src/main/res/menu/navigation.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android - principal/app/src/main/res/menu/toolbar_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android - principal/app/src/main/res/menu/toolbar_my_rides.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/layout/activity_chat.xml" value="0.19157608695652173" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/layout/activity_falae.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/layout/activity_main.xml" value="0.19157608695652173" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/layout/activity_menu_options.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/layout/activity_ride_detail.xml" value="0.264" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/layout/fragment_options_menu.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/layout/fragment_ride_filter.xml" value="0.21195652173913043" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/layout/fragment_ride_offer.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/layout/fragment_rides_history.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/layout/item_chatmsg_left.xml" value="0.19157608695652173" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/layout/item_chatmsg_right.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/layout/item_my_rides_card.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/layout/item_ridehistory.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/layout/item_rides_card.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/layout/media_item_view.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/layout/row_spn.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/layout/row_spn_dropdown.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/layout/separator_all_rides.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/layout/surface_view.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/layout/texture_view.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/layout/toolbar_view.xml" value="0.21693840579710144" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/menu/navigation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/menu/toolbar_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Lucas/Desktop/Development/workspace/java/caronae-backend-22-06/bkp/TCC_Lucas_Figueiredo-Caronae-Android-principal/app/src/main/res/menu/toolbar_my_rides.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

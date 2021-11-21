@@ -46,7 +46,8 @@ public class FAQFrag extends Fragment {
                 progressBar.setVisibility(View.GONE);
             }
         });
-        webView.loadUrl(Constants.CARONAE_URL_BASE + "faq.html?mobile");
+        //webView.loadUrl(Constants.CARONAE_URL_BASE + "faq.html?mobile");
+        webView.loadUrl("https://caronae.org/faq.html?mobile");
         webView.getSettings().setJavaScriptEnabled(true);
         return view;
     }

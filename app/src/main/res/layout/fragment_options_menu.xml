@@ -80,15 +80,16 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp">
+
                 <TextView
                     android:id="@+id/myprofile_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_myprofile_title"
-                    android:textSize="17sp"
-                    android:textColor="@color/dark_gray"
                     android:clickable="true"
-                    android:focusable="true"/>
+                    android:focusable="true"
+                    android:text="@string/fragment_myprofile_title"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="17sp" />
 
                 <TextView
                     android:id="@+id/history_btn"
@@ -115,25 +116,13 @@
                     android:focusable="true"/>
 
                 <TextView
-                    android:id="@+id/falae_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/fragment_falae_title"
-                    android:layout_marginTop="20dp"
-                    android:textSize="17sp"
-                    android:layout_below="@id/faq_btn"
-                    android:textColor="@color/dark_gray"
-                    android:clickable="true"
-                    android:focusable="true"/>
-
-                <TextView
                     android:id="@+id/termsofuse_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/fragment_termsofuse_title"
                     android:layout_marginTop="20dp"
                     android:textSize="17sp"
-                    android:layout_below="@id/falae_btn"
+                    android:layout_below="@id/faq_btn"
                     android:textColor="@color/dark_gray"
                     android:clickable="true"
                     android:focusable="true"/>
